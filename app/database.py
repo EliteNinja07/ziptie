@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.engine import URL
 
-from config import Config
+from app.config import Config
 
 SQLALCHEMY_DB_URL = URL.create(
     drivername=Config.DRIVERNAME,
