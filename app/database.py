@@ -3,13 +3,15 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.engine import URL
 
+from config import Config
+
 SQLALCHEMY_DB_URL = URL.create(
-    drivername="mysql+pymysql",
-    username="avnadmin",
-    password="AVNS_sCPT6B5CBcW2RX4E7qM",
-    port=28889,
-    host="mysql-338b5148-anthony-4f9a.g.aivencloud.com",
-    database="defaultdb"
+    drivername=Config.DRIVERNAME,
+    username=Config.USERNAME,
+    password=Config.PASSWORD,
+    port=Config.PORT,
+    host=Config.HOST,
+    database=Config.DATABASE
 )
 
 engine = create_engine(SQLALCHEMY_DB_URL)
