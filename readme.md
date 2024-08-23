@@ -58,7 +58,7 @@ fastapi dev app
         "Email": "author@example.com"
     }
     ```
-### 1. Create a Book
+### 2. Create a Book
 
 - **Endpoint**: `POST /book`
 - **Description**: Creates a new book in the database, associated with an existing author.
